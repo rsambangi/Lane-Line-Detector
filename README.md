@@ -8,8 +8,12 @@ A lane line detection algorithm made with C++ and OpenCV with 94% accuracy on a 
   * Frame is converted to HSV for accurate color masking
   * Color mask is applied to isolate white and yellow colored lane lines
   * Gaussian blur and canny edge detection are applied to the image mask to soften the edges and isolate lane line outlines
-* Line Detection
-  * fsdf
+* Lane Line Detection
+  * Hough Line Transform is applied to the image mask to isolate all lines in the image
+  * To isolate dashed lines, any lines that have duplicates with the same slope or are within marginal x-bounds are clustered together as one dashed line
+  * All duplicate lines are then removed
+* Final Scaling
+  * All lines are then scaled to the full length of the frame and assigned to their respective vector category (dashed and solid, yellow and white)
 
 # What I Learned
 
