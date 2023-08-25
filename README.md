@@ -5,7 +5,11 @@ A lane line detection algorithm made with C++ and OpenCV with 94% accuracy on a 
 # How It Works
 
 * Image Preprocessing
-  * Fdf
+  * Frame is converted to HSV for accurate color masking
+  * Color mask is applied to isolate white and yellow colored lane lines
+  * Gaussian blur and canny edge detection are applied to the image mask to soften the edges and isolate lane line outlines
+* Line Detection
+  * 
 
 # What I Learned
 
