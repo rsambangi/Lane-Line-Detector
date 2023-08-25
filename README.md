@@ -5,7 +5,7 @@ A lane line detection algorithm made with C++ and OpenCV with 94% accuracy on a 
 # How It Works
 
 * Image Preprocessing
-*   sdfsfsd
+  * Fdf
 
 # What I Learned
 
